@@ -4,3 +4,6 @@ node_modules/
 # production css
 *.css
 
+# sample template
+view/
+
