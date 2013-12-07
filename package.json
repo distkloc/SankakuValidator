@@ -1,0 +1,13 @@
+{
+  "name": "blog-sankaku-validator",
+  "version": "0.1.0",
+  "description": "",
+  "author": "distkloc",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-less": "~0.8.3",
+    "grunt-este-watch": "~0.1.13",
+    "grunt-contrib-connect": "~0.5.0"
+  }
+}
