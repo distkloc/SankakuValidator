@@ -131,7 +131,9 @@ a.keyword, a:visited.keyword {
 /* 1カラムにしたい場合は下記のコメントアウトを外してください ---- */
 
 #main {
-    width: 100%;
+    /* width: 100%; */
+    width: @main-width;
+    margin: 0 auto;
     float: none;
 }
 
@@ -141,7 +143,8 @@ a.keyword, a:visited.keyword {
 }
 
 #box2-inner {
-    width: 960px;
+    margin: 0 auto;
+    width: @main-width + 20px;
     .clearfix;
     overflow: hidden;
 }
@@ -229,7 +232,6 @@ a.keyword, a:visited.keyword {
 }
 
 .entry-title {
-    .entry-margin; 
     line-height: 1.3;
     font-size: 200%;
 }
@@ -237,9 +239,8 @@ a.keyword, a:visited.keyword {
 /* 日付 */
 
 .date {
-    .entry-margin; 
-    font-weight: bold;
     margin-bottom: 10px;
+    font-weight: bold;
     padding-top: @content-padding-top;
 
     a {
@@ -253,7 +254,6 @@ a.keyword, a:visited.keyword {
 /* カテゴリ */
 
 .categories {
-    .entry-margin; 
     margin-top: 10px;
     font-size: 90%;
     a {
@@ -284,7 +284,6 @@ a.keyword, a:visited.keyword {
 /* entry-content の中の書式 */
 
 .entry-content {
-    .entry-margin;
     font-size: 109%;
     line-height: 1.7;
     padding-bottom: 10px;
@@ -395,7 +394,6 @@ a.keyword, a:visited.keyword {
 
 .entry-footer {
     margin-top: 10px;
-    .entry-margin;
 }
 
 .entry-footer-section {
@@ -479,7 +477,6 @@ a.keyword, a:visited.keyword {
 /* sidebar */
 
 #box2 {
-    .entry-margin;
     font-size: 85%;
     line-height: 1.5;
 }
@@ -661,7 +658,6 @@ a.keyword, a:visited.keyword {
     #main {
 
         padding-top: @content-padding-top;
-        .entry-margin;
 
         section {
             margin-bottom: 20px;
