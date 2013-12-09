@@ -4,7 +4,8 @@ module.exports = function(grunt) {
         connect: {
             server: {
                 options: {
-                    livereload: true
+                    livereload: true,
+                    open: true
                 }
             }
         },
@@ -19,12 +20,10 @@ module.exports = function(grunt) {
             },
             production: {
                 options: {
-                    paths: ['less'],
+                    paths: '<%= less.development.options.paths %>',
                     cleancss: true
                 },
-                files: {
-                    'sankakuvalidator.css': 'sankakuvalidator.less'
-                } 
+                files: '<%= less.development.files %>'
             }
         },
         esteWatch: {
