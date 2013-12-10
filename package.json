@@ -1,7 +1,6 @@
 {
-  "name": "blog-sankaku-validator",
+  "name": "blog-theme-sankakuvalidator",
   "version": "0.1.0",
-  "description": "",
   "author": "distkloc",
   "license": "MIT",
   "devDependencies": {
