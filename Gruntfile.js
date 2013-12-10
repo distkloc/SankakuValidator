@@ -39,6 +39,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-este-watch');
 
-    grunt.registerTask('default', ['less:development', 'connect', 'esteWatch']);
+    grunt.registerTask('default', [
+            'less:development', 
+            'connect', 
+            'esteWatch'
+            ]);
 
 };
