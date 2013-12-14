@@ -11,28 +11,32 @@ module.exports = function(grunt) {
             }
         },
         less:{
-            development: {
-                options: {
-                    paths: ['less']
-                },
-                files: {
-                    'sankakuvalidator.css': 'sankakuvalidator.less'
-                } 
-            },
             production: {
                 options: {
-                    paths: '<%= less.development.options.paths %>',
+                    paths: ['less'],
                     cleancss: true
                 },
-                files: '<%= less.development.files %>'
+                files: {
+                    '<%= projectName %>.min.css': '<%= projectName %>.less'        
+                }
+            },
+            development: {
+                options: {
+                    paths: '<%= less.production.options.paths %>'
+                },
+                files: {
+                    '<%= projectName %>.css': '<%= projectName %>.less'        
+                } 
             }
         },
         esteWatch: {
             options: {
-                dirs: ['./', 'less/'],
+                dirs: ['./', 'less/']
             },
             'less': function(filepath) { return 'less:development' }
-        }
+        },
+
+        projectName: 'sankakuvalidator',
     });
 
     grunt.loadNpmTasks('grunt-contrib-less');
