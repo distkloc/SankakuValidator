@@ -7,3 +7,5 @@ node_modules/
 # sample template
 view/
 
+
+.DS_Store
