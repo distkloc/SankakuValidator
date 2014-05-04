@@ -4,9 +4,9 @@
   "author": "distkloc",
   "license": "MIT",
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-less": "~0.8.3",
-    "grunt-este-watch": "~0.1.13",
-    "grunt-contrib-connect": "~0.5.0"
+    "grunt": "~0.4.4",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-este-watch": "~0.1.16",
+    "grunt-contrib-connect": "~0.7.1"
   }
 }
