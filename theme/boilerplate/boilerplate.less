@@ -130,7 +130,7 @@ a.keyword {
     padding-top: 0; // グローバルヘッダ非表示の時
 }
 
-/* 2カラムレイアウト */
+/* 2カラムレイアウト
 
 #main {
     width: 600px;
@@ -141,22 +141,26 @@ a.keyword {
     width: 300px;
     float: right;
 }
+*/
 
-/* 1カラムにしたい場合は下記のコメントアウトを外してください ----
+/* 1カラムにしたい場合は下記のコメントアウトを外してください ---- */
 
 #main {
-    width: 100%;
+    width: @main-width;
+    margin: 0 auto;
     float: none;
 }
 
 #box2 {
-    width: 100%;
     background-color: @bg-header;
+    margin: 0 auto;
+    padding-top: 40px;
     float: none;
 }
 
 #box2-inner {
-    width: 960px;
+    width: @main-width;
+    margin: 0 auto;
     .clearfix;
     overflow: hidden;
 }
@@ -181,7 +185,7 @@ a.keyword {
     }
 }
 
----- END 1カラム */
+/* ---- END 1カラム */
 
 /* header */
 
