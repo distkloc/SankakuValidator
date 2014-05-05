@@ -116,13 +116,12 @@ a.keyword {
 /* container */
 
 #container {
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 30px;
     padding-top: 37px; // グローバルヘッダを fixed にしているため
+    background-color: @bg-header;
 
     #content {
+        background-color: @bg-light;
         .clearfix;
     }
 }
@@ -152,6 +151,7 @@ a.keyword {
 
 #box2 {
     width: 100%;
+    background-color: @bg-header;
     float: none;
 }
 
