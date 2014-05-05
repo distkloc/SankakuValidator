@@ -232,17 +232,22 @@ a.keyword {
 #top-editarea {
     background: @bg-header-bar url("../resources/header-polygon-bar.svg") no-repeat 0 0;
     height: 76px;
-    .clearfix;
 
     #my-social-icons {
-        margin-top: 8px;
+        .clearfix;
+        margin: 0;
         padding-right: 5%;
-        float: right; 
         list-style: none;
 
-        transition: opacity 0.2s ease-in-out;
-        &:hover {
+        li {
             opacity: 0.8;
+            float: right; 
+            margin: 4px 5px 0;
+            transition: opacity 0.2s ease-in-out;
+
+            &:hover {
+                opacity: 1;
+            }
         }
     } 
 }
