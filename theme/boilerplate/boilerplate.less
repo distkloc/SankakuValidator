@@ -168,8 +168,8 @@ a.keyword {
 .hatena-module {
     color: @text-module;
     text-align: left;
-    padding: 0 10px;
-    width: (@main-width / 3) - 20; //padding分マイナス
+    padding: 0 (@hatena-module-h-padding / 2);
+    width: (@main-width / 3) - @hatena-module-h-padding;
     float: left;
 
     &:nth-child(3n+1) {
